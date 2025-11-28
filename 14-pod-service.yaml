@@ -5,8 +5,8 @@ metadata:
   # These labels are used to register this pod with service
   labels:
     project: roboshop
-    # component: frontend
-    # environment: dev
+    component: frontend
+    environment: dev
 spec:
   containers:
   - name: nginx
