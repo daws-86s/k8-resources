@@ -13,3 +13,15 @@ spec:
   csi:
     driver: efs.csi.aws.com
     volumeHandle: fs-08ea446237bfb47e1
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: efs-static
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: ""
+  resources:
+    requests:
+      storage: 5Gi
